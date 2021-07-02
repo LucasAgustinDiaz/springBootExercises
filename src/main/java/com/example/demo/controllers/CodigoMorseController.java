@@ -18,7 +18,7 @@ public class CodigoMorseController {
      * @param msj String
      * @return ResponseEntity<ResponseEntity>
      */
-    @GetMapping("/parserMorse")
+    @GetMapping("/translateToNaturalLanguage")
     public ResponseEntity<CodigoMorse> casting(@RequestParam(value="morseCode",required = true) String msj){
         return new ResponseEntity<CodigoMorse>( new CodigoMorse(msj,1), HttpStatus.OK);
     }
@@ -28,7 +28,7 @@ public class CodigoMorseController {
      * @param msj String
      * @return ResponseEntity<ResponseEntity>
      */
-    @GetMapping("/parserToMorse")
+    @GetMapping("/traslateToMorse")
     public ResponseEntity<CodigoMorse> castingToMorse(@RequestParam(value="languageNatural",required = true) String msj){
 //        NumeroRomano n = new NumeroRomano(number);
         return new ResponseEntity<CodigoMorse>( new CodigoMorse(msj,2), HttpStatus.OK);

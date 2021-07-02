@@ -26,9 +26,9 @@ public class CodigoMorse {
      * @param msj message to translate
      * @param type  --- 1 morse to natural || 2 natural to morse
      */
-    public CodigoMorse(String msj,int type) {
+    public CodigoMorse(String msj,int action) {
         this.loadMorseLetterParser();
-        if (type == 1) {
+        if (action == 1) {
             this.morseCode = msj;
             this.languageNatural = this.traductionToNatural(msj);
             this.action = "Morse code to natural language";
