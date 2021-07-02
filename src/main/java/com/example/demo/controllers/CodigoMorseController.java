@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CodigoMorseController {
 
     /**
-     *
+     * Translate morse code to natural language
      * @param msj String
      * @return ResponseEntity<ResponseEntity>
      */
@@ -24,7 +24,7 @@ public class CodigoMorseController {
     }
 
     /**
-     *
+     * Translate natural language to morse code
      * @param msj String
      * @return ResponseEntity<ResponseEntity>
      */

@@ -19,8 +19,8 @@ public class NumbersRomansController {
     private final AtomicLong counter = new AtomicLong();
 
     /**
-     *
-     * @param number
+     * Convert a whole number to a roman number
+     * @param number Integer
      * @return ResponseEntity<NumeroRomano>
      */
     @GetMapping("/castingDecimal")
@@ -30,8 +30,8 @@ public class NumbersRomansController {
 
 
     /**
-     *
-     * @param number
+     * Convert a roman number to a whole number
+     * @param number String
      * @return ResponseEntity<NumeroRomano> OR ResponseEntity<NumeroRomanoBadRequest>
      */
     @GetMapping("/castingRomano")
