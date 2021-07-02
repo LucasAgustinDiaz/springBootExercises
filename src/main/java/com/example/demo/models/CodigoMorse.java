@@ -24,7 +24,7 @@ public class CodigoMorse {
     /**
      * constructor method
      * @param msj message to translate
-     * @param type  --- 1 morse to natural || 2 natural to morse
+     * @param action  --- 1 morse to natural || 2 natural to morse
      */
     public CodigoMorse(String msj,int action) {
         this.loadMorseLetterParser();
